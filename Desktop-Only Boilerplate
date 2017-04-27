@@ -1,77 +1,68 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!--[if !mso]><!-->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!--<![endif]-->
-      <meta name="format-detection" content="telephone=no"/>
-      <title> TITLE </title>
-      <style type="text/css">
-
-  		/* Reset & Fixes for COMMON ISSUES */
-         #outlook a { padding:0; }
-         body { width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0 !important; padding:0; }
-         .ReadMsgBody { width:100%; }
-         .ExternalClass { width:100%; }
-         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height:100%; }
-         table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
-         table td { border-collapse:collapse; }
-         a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
-         div[style*="margin: 16px 0"] { margin:0 !important; font-size:100% !important; }
-		 .gmailfix { display:none; display:none !important; }
-		 /* End Reset & Fixes for COMMON ISSUES */
-
-		/* Custom Code Starts Here
-			Author: Last Name, First Name
-			Date: MM/DD/YYYY
-			Ticket Number: DMCWEB-XXXX
-		*/
-
-		/* Custom Code Ends Here */
-      </style>
-      <!--[if gte mso 9]>
-      <xml>
-         <o:OfficeDocumentSettings>
-            <o:AllowPNG/>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-         </o:OfficeDocumentSettings>
-      </xml>
-      <![endif]-->
-   </head>
-   <body style="margin:0; padding:0; width:100% !important;">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="table-layout: fixed;">
-         <tbody>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="format-detection" content="telephone=no"/>
+    <title> TITLE </title>
+    <style type="text/css">
+      /* Reset & Fixes for COMMON ISSUES */
+      #outlook a { padding:0; }
+      body { width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0 !important; padding:0; }
+      .ReadMsgBody { width:100%; }
+      .ExternalClass { width:100%; }
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height:100%; }
+      table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+      table td { border-collapse:collapse; }
+      a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+      div[style*="margin: 16px 0"] { margin:0 !important; font-size:100% !important; }
+      .gmailfix { display:none; display:none !important; }
+      /* End Reset & Fixes for COMMON ISSUES */
+      /* Custom Code Starts Here
+      Author: Last Name, First Name
+      Date: MM/DD/YYYY
+      Ticket Number: DMCWEB-XXXX
+      */
+      /* Custom Code Ends Here */
+    </style>
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  </head>
+  <body style="margin:0; padding:0; width:100% !important;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="table-layout: fixed;">
+      <tr>
+        <td align="center">
+          <table width="{width}" border="0" cellspacing="0" cellpadding="0" align="center" style="width: {width}px; margin: 0 auto;">
             <tr>
-               <td align="center">
-                  <table width="{width}" border="0" cellspacing="0" cellpadding="0" align="center" style="width: {width}px; margin: 0 auto;">
-                     <tbody>
-                        <tr>
-                           <td align="center" valign="top">
-														<table width="{width}" border="0" cellspacing="0" cellpadding="0" align="center" style="width: {width}px; margin: 0 auto;">
-																<tbody>
-																	 <tr>
-																			<!-- Text TD -->
-																			<td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; mso-line-height-rule: exactly; line-height: {line-height}px (Increment the line-height by +1 or +2 on it's font-size); color: {color};">TEXT ONLY</td>
-																			<!-- IMG only TD -->
-																			<td align="left" valign="top" style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px;"><img src="{image}" width="{width}" height="{height}" style="margin:0; padding:0; border:none; display:block;" border="0" alt="{alt}" title="{title}" /></td>
-																	 </tr>
-																</tbody>
-														 </table>
-						   						</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </td>
+              <td align="center" valign="top">
+                <table width="{width}" border="0" cellspacing="0" cellpadding="0" align="center" style="width: {width}px; margin: 0 auto;">
+                  <tr>
+                    <!-- Text TD -->
+                    <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; mso-line-height-rule: exactly; line-height: {line-height}px (Increment the line-height by +1 or +2 on it's font-size); color: {color};">TEXT ONLY</td>
+                    <!-- IMG only TD -->
+                    <td align="left" valign="top" style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px;"><img src="{image}" width="{width}" height="{height}" style="margin:0; padding:0; border:none; display:block;" border="0" alt="{alt}" title="{title}" /></td>
+                  </tr>
+                </table>
+              </td>
             </tr>
-         </tbody>
-      </table>
-	  <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
-  		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  	</div>
-   </body>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+  </body>
 </html>
