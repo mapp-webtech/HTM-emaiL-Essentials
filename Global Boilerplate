@@ -123,6 +123,49 @@
                   </tr>
                 </table>
                 <!-- END TWO COLUMN -->
+                <!-- THREE COLUMN -->
+                <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="mobile-expanding">
+                  <tr>
+                    <td align="left" valign="top" style="padding: 0px;">
+                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="mobile-block-full-width">
+                        <tr>
+                          <td width="{width}" valign="top" class="{class}">
+                            Left column
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if gte mso 9]>
+                    </td>
+                    <td valign="top">
+                      <![endif]-->
+                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="mobile-block-full-width">
+                        <tr>
+                          <td width="{width}" valign="top" class="{class}">
+                            <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="mobile-block-full-width">
+                              <tr>
+                                <td width="{width}" valign="top" class="{class}">
+                                  Middle column
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>
+                          </td>
+                          <td valign="top">
+                            <![endif]-->
+                            <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="mobile-block-full-width">
+                              <tr>
+                                <td width="{width}" valign="top" class="{class}">
+                                  Right column
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- END THREE COLUMN -->
               </td>
             </tr>
           </table>
