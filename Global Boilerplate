@@ -3,43 +3,35 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if !mso]><!-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--<![endif]-->
     <meta name="format-detection" content="telephone=no"/>
     <title> {TITLE} </title>
     <style type="text/css">
       /* Reset & Fixes for COMMON ISSUES */
       #outlook a {padding:0;}
-      body {width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0 !important; padding:0;}
       .ReadMsgBody {width:100%;}
       .ExternalClass {width:100%;}
       .ExternalClass ecx* {line-height:100%;}
       .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
-      img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
-      a img {border:none;}
-      .ExternalClass img[class^=Emoji] { width: 10px !important; height: 10px !important; display: inline !important; }
-      img { -ms-interpolation-mode: bicubic; }
-      body, p{margin:0; padding:0; margin-bottom:0; -webkit-text-size-adjust:100%;  -ms-text-size-adjust:100%;}
+      img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; border:none;}
+      .ExternalClass img[class^=Emoji] {width: 10px !important; height: 10px !important; display: inline !important;}
+      body, p {margin:0; padding:0; margin-bottom:0; -webkit-text-size-adjust:100%;  -ms-text-size-adjust:100%;}
       table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
       table td {border-collapse:collapse;}
       a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;}
       div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
-      .mobile-only {display: none; max-height: 0px; mso-hide: all; overflow: hidden; visibility: hidden;}
       .tablefixed {table-layout: fixed;}
+      .mob-only {display: none !important; visibility: hidden !important;}
       /* END Reset & Fixes for COMMON ISSUES */
-      @media only screen and (max-device-width: {width}px), only screen and (max-width: {width}px) {
-      /* START Generic Classes & Styles for Mobile Only, Mobile Hide & Full Width */
-      *[class].mobile-only {display: block !important; max-height: none !important; overflow: visible !important; visibility: visible !important;}
-      *[class].mobile-hide {display: none !important; height: 0 !important; margin: 0 !important; max-height: 0 !important; overflow: hidden !important; padding: 0 !important; visibility: hidden !important; width: 0 !important;}
-      /* for elements that you don't want to treat as block elements */
-      *[class].mobile-expanding {clear: both !important; float: none !important; width: 100% !important; }
-      *[class].mobile-block-full-width {clear: both !important; display: block !important; float: none !important; height: auto !important; width: 100% !important;}
-      /* for elements that should be on center */
-      *[class].display-table {display: table !important;}
+      @media screen and (max-width:{max-width}px) and (max-device-width: 1100px) {
+      /* Image */
       *[class].img-responsive {max-width: 100% !important; height: auto !important; width: auto !important;}
-      /* END Generic Classes & Styles for Mobile Only, Mobile Hide & Full Width */
-      /* Usable Classes - REMOVE IF NOT USED */
+      /* Show */
+      *[class].mob-only   {display: block !important; visibility: visible !important;}
+      *[class].showtable 	{display: table !important; width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
+      *[class].showtd  	  {display: table-cell !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
+      /* Hide */
+      *[class].mob-hide   {display: none !important;}
       /* Height */
       *[class].hauto    	{height: auto !important;}
       *[class].h40px     	{height: 40px !important;}
@@ -48,11 +40,12 @@
       *[class].mw0px		  {min-width: 0px !important;}
       *[class].w100px     {width: 100px !important;}
       *[class].w100pc     {width: 100% !important;}
-      /* font */
+      *[class].w100pc-block {display: block !important; width: 100% !important;}
+      /* Font */
       *[class].font15px	  {font-size: 15px !important;}
-      /* text */
+      /* Text */
       *[class].txtBold 	  {font-weight:bold !important;}
-      /*padding*/
+      /* Padding */
       *[class].padL40px	  {padding-left: 40px !important;}
       *[class].padR40px  	{padding-right: 40px !important;}
       *[class].padTRBL40px{padding-top: 40px !important;padding-right: 40px !important;padding-bottom: 40px !important;padding-left: 40px !important;}
@@ -60,7 +53,6 @@
       *[class].Colour_LightGrey  	{color: #2e2e2e !important;}
       *[class].BGColour_Red     	{background-color: #ff0000 !important;}
       *[class].borderBGrey      	{border-bottom: 1px solid #c7c7c7 !important;}
-      /* END Usable Classes - REMOVE IF NOT USED */
       }
     </style>
     <!--[if gte mso 9]>
@@ -72,107 +64,107 @@
     </xml>
     <![endif]-->
   </head>
-  <body style="margin:0; width:100% !important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; -webkit-text-size-adjust: none;">
-    <!--[if !mso]><!-->
-    <table width="100%" style="min-width:{width}px;" border="0" cellpadding="0" cellspacing="0" class="mw0px tablefixed">
+  <body style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; -webkit-text-size-adjust: none;" bgcolor="{bgcolor}">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="{bgcolor}">
       <tr>
-        <td width="100%" style="min-width:{width}px;" align="center" bgcolor="{bgcolor}" class="mw0px">
-          <!--<![endif]-->
-          <table width="{width}" border="0" cellspacing="0" cellpadding="0" align="center" style="width: {width}px; margin: 0 auto;" class="mobile-expanding">
+        <td align="center">
+          <!--[if !mso]><!-->
+          <table width="100%" style="min-width:{width}px;" border="0" cellpadding="0" cellspacing="0" class="mw0px tablefixed">
             <tr>
-              <td align="center" valign="top">
-                <!-- SINGLE COL + IMAGE ONLY + TEXT ONLY -->
-                <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="mobile-expanding">
-                  <tr>
-                    <td align="left" valign="top">
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
-                        <tr>
-                          <!-- Text only TD -->
-                          <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; mso-line-height-rule: exactly; line-height: {line-height}px (Increment the line-height by +1 or +2 on it's font-size); color: {color};">TEXT ONLY</td>
-                          <!-- IMG only TD -->
-                          <td align="left" valign="top" style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px;"><img src="{image}" width="{width}" height="{height}" style="margin:0; padding:0; border:none; display:block;" border="0" alt="{alt}" title="{title}" class="{class}" /></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!-- END SINGLE COL + IMAGE ONLY + TEXT ONLY -->
-                <!-- TWO COLUMN -->
-                <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="mobile-expanding">
-                  <tr>
-                    <td align="left" valign="top" style="padding: 0px;">
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="mobile-block-full-width">
-                        <tr>
-                          <td width="{width}" valign="top" class="{class}">
-                            Left column
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if gte mso 9]>
-                    </td>
-                    <td valign="top">
-                      <![endif]-->
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="mobile-block-full-width">
-                        <tr>
-                          <td width="{width}" valign="top" class="{class}">
-                            Right Column
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!-- END TWO COLUMN -->
-                <!-- THREE COLUMN -->
-                <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="mobile-expanding">
-                  <tr>
-                    <td align="left" valign="top" style="padding: 0px;">
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="mobile-block-full-width">
-                        <tr>
-                          <td width="{width}" valign="top" class="{class}">
-                            Left column
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if gte mso 9]>
-                    </td>
-                    <td valign="top">
-                      <![endif]-->
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="mobile-block-full-width">
-                        <tr>
-                          <td width="{width}" valign="top" class="{class}">
-                            <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="mobile-block-full-width">
-                              <tr>
-                                <td width="{width}" valign="top" class="{class}">
-                                  Middle column
-                                </td>
-                              </tr>
-                            </table>
-                            <!--[if gte mso 9]>
-                          </td>
-                          <td valign="top">
-                            <![endif]-->
-                            <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="mobile-block-full-width">
-                              <tr>
-                                <td width="{width}" valign="top" class="{class}">
-                                  Right column
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!-- END THREE COLUMN -->
+              <td width="100%" style="min-width:{width}px;" align="center" class="mw0px">
+                <!--<![endif]-->
+                  <!-- SINGLE COL + IMAGE ONLY + TEXT ONLY -->
+                  <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="{class}">
+                    <tr>
+                      <td align="left" valign="top">
+                        <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
+                          <tr>
+                            <!-- Text only TD -->
+                            <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; mso-line-height-rule: exactly; line-height: {line-height}px (Increment the line-height by +1 or +2 on it's font-size); color: {color};">TEXT ONLY</td>
+                            <!-- IMG only TD -->
+                            <td align="left" valign="top" style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px;"><img src="{image}" width="{width}" height="{height}" style="display:block; max-width: {max-width}px" border="0" alt="{alt}" title="{title}" class="{class}" /></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- END SINGLE COL + IMAGE ONLY + TEXT ONLY -->
+                  <!-- TWO COLUMN -->
+                  <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="{class}">
+                    <tr>
+                      <td align="left" valign="top" style="padding: 0px;">
+                        <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
+                          <tr>
+                            <td width="{width}" valign="top">
+                              Left column
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]>
+                      </td>
+                      <td valign="top">
+                        <![endif]-->
+                        <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="{class}">
+                          <tr>
+                            <td width="{width}" valign="top">
+                              Right Column
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- END TWO COLUMN -->
+                  <!-- THREE COLUMN -->
+                  <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="{class}">
+                    <tr>
+                      <td align="left" valign="top" style="padding: 0px;">
+                        <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
+                          <tr>
+                            <td width="{width}" valign="top">
+                              Left column
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]>
+                      </td>
+                      <td valign="top">
+                        <![endif]-->
+                        <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="{class}">
+                          <tr>
+                            <td width="{width}" valign="top" class="{class}">
+                              <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
+                                <tr>
+                                  <td width="{width}" valign="top">
+                                    Middle column
+                                  </td>
+                                </tr>
+                              </table>
+                              <!--[if gte mso 9]>
+                            </td>
+                            <td valign="top">
+                              <![endif]-->
+                              <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="{class}">
+                                <tr>
+                                  <td width="{width}" valign="top">
+                                    Right column
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- END THREE COLUMN -->
+                <!--[if !mso]><!-->
               </td>
             </tr>
           </table>
-          <!--[if !mso]><!-->
+          <!--<![endif]-->
         </td>
       </tr>
     </table>
-    <!--<![endif]-->
   </body>
 </html>
