@@ -16,22 +16,21 @@
       img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; border:none;}
       .ExternalClass img[class^=Emoji] {width: 10px !important; height: 10px !important; display: inline !important;}
       body, p {margin:0; padding:0; margin-bottom:0; -webkit-text-size-adjust:100%;  -ms-text-size-adjust:100%;}
-      table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
-      table td {border-collapse:collapse;}
+      table, table td {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
       a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;}
       div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
       .tablefixed {table-layout: fixed;}
-      .mob-only {display: none !important; visibility: hidden !important;}
       /* END Reset & Fixes for COMMON ISSUES */
-      @media screen and (max-width:{max-width}px) and (max-device-width: 1100px) {
+      @media screen and (max-width:[TEMPLATEWIDTH-1]px) and (max-device-width: 1100px) {
       /* Image */
       *[class].img-responsive {max-width: 100% !important; height: auto !important; width: auto !important;}
       /* Show */
-      *[class].mob-only   {display: block !important; visibility: visible !important;}
+      *[class].show       {display: block !important;width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important; visibility: visible !important;}
       *[class].showtable 	{display: table !important; width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       *[class].showtd  	  {display: table-cell !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
+	    *[class].showimg 	  {display: block !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       /* Hide */
-      *[class].mob-hide   {display: none !important;}
+      *[class].hide       {display: none !important;}
       /* Height */
       *[class].hauto    	{height: auto !important;}
       *[class].h40px     	{height: 40px !important;}
@@ -40,7 +39,6 @@
       *[class].mw0px		  {min-width: 0px !important;}
       *[class].w100px     {width: 100px !important;}
       *[class].w100pc     {width: 100% !important;}
-      *[class].w100pc-block {display: block !important; width: 100% !important;}
       /* Font */
       *[class].font15px	  {font-size: 15px !important;}
       /* Text */
@@ -65,38 +63,41 @@
     <![endif]-->
   </head>
   <body style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; -webkit-text-size-adjust: none;" bgcolor="{bgcolor}">
+    <!--[if mso 16]<!-->
     <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="{bgcolor}">
       <tr>
         <td align="center">
+        <!--<![endif]-->
           <!--[if !mso]><!-->
           <table width="100%" style="min-width:{width}px;" border="0" cellpadding="0" cellspacing="0" class="mw0px tablefixed">
             <tr>
               <td width="100%" style="min-width:{width}px;" align="center" class="mw0px">
                 <!--<![endif]-->
                 <!-- SINGLE COL + IMAGE ONLY + TEXT ONLY -->
-                <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="{class}">
+                <table cellpadding="0" cellspacing="0" border="0" align="center" class="w100pc">
                   <tr>
                     <td align="left" valign="top">
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
+                      <table border="0" cellpadding="0" cellspacing="0" align="left" class="{class}">
                         <tr>
                           <!-- Text only TD -->
-                          <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; mso-line-height-rule: exactly; line-height: {line-height}px (Increment the line-height by +1 or +2 on it's font-size); color: {color};">TEXT ONLY</td>
+                          <td width="{tablewidth-imagewidth}" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; line-height: {line-height}px (Increment the line-height at least by +2 on it's font-size); mso-line-height-rule: exactly; color: {color};">TEXT ONLY</td>
                           <!-- IMG only TD -->
-                          <td align="left" valign="top" style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px;"><img src="{image}" width="{width}" height="{height}" style="display:block; max-width: {max-width}px" border="0" alt="{alt}" title="{title}" class="{class}" /></td>
+                          <td align="left" valign="top" style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px;"><img src="{image}" width="{width}" height="{height}" style="display:block;max-width:{width};" border="0" alt="{alt}" title="{title}" class="w100pc mwNone" /></td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                 </table>
                 <!-- END SINGLE COL + IMAGE ONLY + TEXT ONLY -->
+
                 <!-- TWO COLUMN -->
-                <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="{class}">
+                <table cellpadding="0" cellspacing="0" border="0" align="center" class="{class}">
                   <tr>
                     <td align="left" valign="top" style="padding: 0px;">
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
+                      <table border="0" cellpadding="0" cellspacing="0" align="left" class="{class}">
                         <tr>
                           <td width="{width}" valign="top">
-                            Left column
+                            Left column (normally you define the width in the inner td for 120dpi resolution; sometimes it works like this sometimes you have to add the width attribute into the table - gmail...)
                           </td>
                         </tr>
                       </table>
@@ -104,10 +105,10 @@
                     </td>
                     <td valign="top">
                       <![endif]-->
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="{class}">
+                      <table border="0" cellpadding="0" cellspacing="0" align="right" class="{class}">
                         <tr>
                           <td width="{width}" valign="top">
-                            Right Column
+                            Right Column (normally you define the width in the inner td for 120dpi resolution; sometimes it works like this sometimes you have to add the width attribute into the table - gmail...)
                           </td>
                         </tr>
                       </table>
@@ -115,14 +116,15 @@
                   </tr>
                 </table>
                 <!-- END TWO COLUMN -->
+
                 <!-- THREE COLUMN -->
-                <table width="{width}" cellpadding="0" cellspacing="0" border="0" bgcolor="{bgcolor}" align="center" class="{class}">
+                <table cellpadding="0" cellspacing="0" border="0" align="center" class="{class}">
                   <tr>
                     <td align="left" valign="top" style="padding: 0px;">
-                      <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
+                      <table border="0" cellpadding="0" cellspacing="0" align="left" class="{class}">
                         <tr>
                           <td width="{width}" valign="top">
-                            Left column
+                            Left column (normally you define the width in the inner td for 120dpi resolution; sometimes it works like this sometimes you have to add the width attribute into the table - gmail...)
                           </td>
                         </tr>
                       </table>
@@ -132,11 +134,11 @@
                       <![endif]-->
                       <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="{class}">
                         <tr>
-                          <td width="{width}" valign="top" class="{class}">
-                            <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="left" style="width:{width}px;" class="{class}">
+                          <td valign="top" class="{class}">
+                            <table border="0" cellpadding="0" cellspacing="0" align="left" class="{class}">
                               <tr>
                                 <td width="{width}" valign="top">
-                                  Middle column
+                                  Middle column (normally you define the width in the inner td for 120dpi resolution; sometimes it works like this sometimes you have to add the width attribute into the table - gmail...)
                                 </td>
                               </tr>
                             </table>
@@ -144,10 +146,10 @@
                           </td>
                           <td valign="top">
                             <![endif]-->
-                            <table width="{width}" border="0" cellpadding="0" cellspacing="0" align="right" style="width:{width}px;" class="{class}">
+                            <table border="0" cellpadding="0" cellspacing="0" align="right" class="{class}">
                               <tr>
                                 <td width="{width}" valign="top">
-                                  Right column
+                                  Right column (normally you define the width in the inner td for 120dpi resolution; sometimes it works like this sometimes you have to add the width attribute into the table - gmail)
                                 </td>
                               </tr>
                             </table>
@@ -158,13 +160,31 @@
                   </tr>
                 </table>
                 <!-- END THREE COLUMN -->
-                <!--[if !mso]><!-->
+
+                <!-- MOBILE ONLY: inline the CSS codes on the element/section you want hide on desktop and wrap the it on the !mso conditional comment. Remember to use 'show' class to show the element on mobile.
+                  (display: none; max-height: 0px; mso-hide: all; visibility: hidden;) -->
+                    <!--[if !mso]><!-->
+                    <table cellpadding="0" cellspacing="0" border="0" align="center" class="show w100pc" style="display: none; max-height: 0px; mso-hide: all; visibility: hidden;">
+                      <tr>
+                        <td align="left" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" align="left" class="{class}">
+                            <tr>
+                              <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; line-height: {line-height}px (Increment the line-height at least by +2 on it's font-size); mso-line-height-rule: exactly; color: {color};">I WILL ONLY SHOW ON MOBILE</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--<![endif]-->
+                <!-- END MOBILE ONLY -->
               </td>
             </tr>
           </table>
           <!--<![endif]-->
+     <!--[if mso 16]<!-->
         </td>
       </tr>
     </table>
+    <!--<![endif]-->
   </body>
 </html>
