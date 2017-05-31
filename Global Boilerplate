@@ -35,6 +35,8 @@
       /* Width */
       *[class].wauto      {width: auto !important;}
       *[class].mw0px		  {min-width: 0px !important;}
+      *[class].mwNone 	{max-width: none !important;}
+      
       *[class].w100px     {width: 100px !important;}
       *[class].w100pc     {width: 100% !important;}
       /* Font */
