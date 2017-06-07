@@ -20,6 +20,7 @@
       a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;}
       div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
       .tablefixed {table-layout: fixed;}
+			.desktophide { display: none; }
       /* END Reset & Fixes for COMMON ISSUES */
       @media screen and (max-width:[TEMPLATEWIDTH-1]px) and (max-device-width: 1100px) {
       /* Show */
@@ -28,7 +29,7 @@
       *[class].showtd  	  {display: table-cell !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
 	    *[class].showimg 	  {display: block !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       /* Hide */
-      *[class].hide       {display: none !important;}
+      *[class].mobhide       {display: none !important;}
       /* Height */
       *[class].hauto    	{height: auto !important;}
       *[class].h40px     	{height: 40px !important;}
