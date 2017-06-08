@@ -20,14 +20,14 @@
       a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;}
       div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
       .tablefixed {table-layout: fixed;}
-			.desktophide { display: none; }
+      .desktophide { display: none; }
       /* END Reset & Fixes for COMMON ISSUES */
       @media screen and (max-width:[TEMPLATEWIDTH-1]px) and (max-device-width: 1100px) {
       /* Show */
       *[class].show       {display: block !important;width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important; visibility: visible !important;}
       *[class].showtable 	{display: table !important; width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       *[class].showtd  	  {display: table-cell !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
-	    *[class].showimg 	  {display: block !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
+      *[class].showimg 	  {display: block !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       /* Hide */
       *[class].mobhide       {display: none !important;}
       /* Height */
@@ -37,7 +37,6 @@
       *[class].wauto      {width: auto !important;}
       *[class].mw0px		  {min-width: 0px !important;}
       *[class].mwNone 	{max-width: none !important;}
-      
       *[class].w100px     {width: 100px !important;}
       *[class].w100pc     {width: 100% !important;}
       /* Font */
@@ -68,7 +67,7 @@
     <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="{bgcolor}">
       <tr>
         <td align="center">
-        <![endif]-->
+          <![endif]-->
           <!--[if !mso]><!-->
           <table width="100%" style="min-width:{width}px;" border="0" cellpadding="0" cellspacing="0" class="mw0px tablefixed">
             <tr>
@@ -90,7 +89,6 @@
                   </tr>
                 </table>
                 <!-- END SINGLE COL + IMAGE ONLY + TEXT ONLY -->
-
                 <!-- TWO COLUMN -->
                 <table cellpadding="0" cellspacing="0" border="0" align="center" class="{class}">
                   <tr>
@@ -117,7 +115,6 @@
                   </tr>
                 </table>
                 <!-- END TWO COLUMN -->
-
                 <!-- THREE COLUMN -->
                 <table cellpadding="0" cellspacing="0" border="0" align="center" class="{class}">
                   <tr>
@@ -161,29 +158,28 @@
                   </tr>
                 </table>
                 <!-- END THREE COLUMN -->
-
                 <!-- MOBILE ONLY: inline the CSS codes on the element/section you want hide on desktop and wrap the it on the !mso conditional comment. Remember to use 'show' class to show the element on mobile.
                   (mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;) -->
-                    <!--[if !mso]><!-->
-                    <table cellpadding="0" cellspacing="0" border="0" align="center" class="showtable" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;">
-                      <tr>
-                        <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;" class="showtd w100pc">
-                          <table border="0" cellpadding="0" cellspacing="0" align="left" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;" class="showtable">
-                            <tr>
-                              <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;font-family: Arial, Helvetica, sans-serif; mso-line-height-rule: exactly; color: {color};" class="showtd w100pc font{width}px lh{line-height}px">I WILL ONLY SHOW ON MOBILE</td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                    <!--<![endif]-->
+                <!--[if !mso]><!-->
+                <table cellpadding="0" cellspacing="0" border="0" align="center" class="showtable" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;">
+                  <tr>
+                    <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;" class="showtd w100pc">
+                      <table border="0" cellpadding="0" cellspacing="0" align="left" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;" class="showtable">
+                        <tr>
+                          <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;font-family: Arial, Helvetica, sans-serif; mso-line-height-rule: exactly; color: {color};" class="showtd w100pc font{width}px lh{line-height}px">I WILL ONLY SHOW ON MOBILE</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--<![endif]-->
                 <!-- END MOBILE ONLY -->
-		<!--[if !mso]><!-->
-        </td>
-      </tr>
-    </table>
-    <!--<![endif]-->
-      <!--[if mso 16]>
+                <!--[if !mso]><!-->
+              </td>
+            </tr>
+          </table>
+          <!--<![endif]-->
+          <!--[if mso 16]>
         </td>
       </tr>
     </table>
