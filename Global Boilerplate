@@ -29,7 +29,7 @@
       *[class].showtd  	  {display: table-cell !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       *[class].showimg 	  {display: block !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       /* Hide */
-      *[class].mobhide       {display: none !important;}
+      *[class].NoMob       {display: none !important;}
       /* Height */
       *[class].hauto    	{height: auto !important;}
       *[class].h40px     	{height: 40px !important;}
