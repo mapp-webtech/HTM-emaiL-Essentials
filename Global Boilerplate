@@ -9,8 +9,7 @@
     <style type="text/css">
       /* Reset & Fixes for COMMON ISSUES */
       #outlook a {padding:0;}
-      .ReadMsgBody {width:100%;}
-      .ExternalClass {width:100%;}
+      .ReadMsgBody, .ExternalClass {width:100%;}
       .ExternalClass ecx* {line-height:100%;}
       .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
       img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; border:none;}
@@ -29,14 +28,14 @@
       *[class].showtd  	  {display: table-cell !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       *[class].showimg 	  {display: block !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       /* Hide */
-      *[class].NoMob       {display: none !important;}
+      *[class].NoMob      {display: none !important;}
       /* Height */
       *[class].hauto    	{height: auto !important;}
       *[class].h40px     	{height: 40px !important;}
       /* Width */
       *[class].wauto      {width: auto !important;}
       *[class].mw0px		  {min-width: 0px !important;}
-      *[class].mwNone 	{max-width: none !important;}
+      *[class].mwNone 	  {max-width: none !important;}
       *[class].w100px     {width: 100px !important;}
       *[class].w100pc     {width: 100% !important;}
       /* Font */
@@ -69,7 +68,7 @@
         <td align="center">
           <![endif]-->
           <!--[if !mso]><!-->
-          <table width="100%" style="min-width:{width}px;" border="0" cellpadding="0" cellspacing="0" class="mw0px tablefixed">
+          <table width="100%" style="min-width:{width}px;" border="0" cellpadding="0" cellspacing="0" class="mw0px tablefixed" bgcolor="{bgcolor}">
             <tr>
               <td width="100%" style="min-width:{width}px;" align="center" class="mw0px">
                 <!--<![endif]-->
@@ -79,10 +78,12 @@
                     <td align="left" valign="top">
                       <table border="0" cellpadding="0" cellspacing="0" align="left" class="{class}">
                         <tr>
-                          <!-- Text only TD -->
-                          <td width="{tablewidth-imagewidth}" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; line-height: {line-height}px (Increment the line-height at least by +2 on it's font-size); mso-line-height-rule: exactly; color: {color};">TEXT ONLY</td>
                           <!-- IMG only TD -->
                           <td align="left" valign="top" style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px;"><img src="{image}" width="{width}" height="{height}" style="display:block;max-width:{width};" border="0" alt="{alt}" title="{title}" class="w100pc mwNone" /></td>
+                        </tr>
+                        <tr>
+                          <!-- Text only TD -->
+                          <td width="{tablewidth-imagewidth}" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; mso-line-height-rule: exactly; line-height: {line-height}px (Increment the line-height at least by +2 on it's font-size);color: {color};">TEXT ONLY</td>
                         </tr>
                       </table>
                     </td>
@@ -166,7 +167,7 @@
                     <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;" class="showtd w100pc">
                       <table border="0" cellpadding="0" cellspacing="0" align="left" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;" class="showtable">
                         <tr>
-                          <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;font-family: Arial, Helvetica, sans-serif; mso-line-height-rule: exactly; color: {color};" class="showtd w100pc font{width}px lh{line-height}px">I WILL ONLY SHOW ON MOBILE</td>
+                          <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; mso-line-height-rule: exactly; line-height: 0;font-family: Arial, Helvetica, sans-serif; color: {color};" class="showtd w100pc font{width}px lh{line-height}px">I WILL ONLY SHOW ON MOBILE</td>
                         </tr>
                       </table>
                     </td>
