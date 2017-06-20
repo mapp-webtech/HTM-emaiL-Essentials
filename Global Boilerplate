@@ -79,11 +79,11 @@
                       <table border="0" cellpadding="0" cellspacing="0" align="left" class="{class}">
                         <tr>
                           <!-- IMG only TD -->
-                          <td align="left" valign="top" style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px;"><img src="{image}" width="{width}" height="{height}" style="display:block;max-width:{width};" border="0" alt="{alt}" title="{title}" class="w100pc mwNone" /></td>
+                          <td align="left" valign="top"><img src="{image}" width="{width}" height="{height}" style="display:block;max-width:{width}px;" border="0" alt="{alt}" title="{title}" class="w100pc mwNone" /></td>
                         </tr>
                         <tr>
                           <!-- Text only TD -->
-                          <td width="{tablewidth-imagewidth}" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; mso-line-height-rule: exactly; line-height: {line-height}px (Increment the line-height at least by +2 on it's font-size);color: {color};">TEXT ONLY</td>
+                          <td width="{tablewidth-imagewidth}" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: {font-size}px; line-height: {line-height}px (Increment the line-height at least by +2 on it's font-size);color: {color};">TEXT ONLY</td>
                         </tr>
                       </table>
                     </td>
@@ -167,7 +167,7 @@
                     <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;" class="showtd w100pc">
                       <table border="0" cellpadding="0" cellspacing="0" align="left" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;" class="showtable">
                         <tr>
-                          <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; mso-line-height-rule: exactly; line-height: 0;font-family: Arial, Helvetica, sans-serif; color: {color};" class="showtd w100pc font{width}px lh{line-height}px">I WILL ONLY SHOW ON MOBILE</td>
+                          <td align="left" valign="top" style="mso-hide: all; display:none; font-size: 0; max-height: 0; line-height: 0;font-family: Arial, Helvetica, sans-serif; color: {color};" class="showtd w100pc font{width}px lh{line-height}px">I WILL ONLY SHOW ON MOBILE</td>
                         </tr>
                       </table>
                     </td>
