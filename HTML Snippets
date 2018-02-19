@@ -1,3 +1,8 @@
+// Stable Superscript //
+<span style="font-family: arial, helvetica, sans-serif; font-size:6pt; line-height:0; vertical-align:5px;">&reg;</span>
+
+#########################################
+
 // Outlook 2000-2013 Targeting //
 <!--[if (gte mso 9)>
 	{content}
