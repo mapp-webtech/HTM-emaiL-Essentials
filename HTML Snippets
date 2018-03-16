@@ -136,3 +136,9 @@
          </td>
      </tr>
   </table>
+
+#########################################
+
+// For targeting Chrome and Firefox //
+.BrowserHide:not(*:root) {visibility: collapse !important;}
+_::-moz-progress-bar, body:last-child .BrowserHide {visibility: collapse !important; display: none !important;}
