@@ -21,7 +21,7 @@
       .tablefixed {table-layout: fixed;}
       .desktophide { display: none; }
       /* END Reset & Fixes for COMMON ISSUES */
-      @media only screen and (max-device-width: 1100px), only screen and (max-width: [TEMPLATEWIDTH-1]px) {
+      @media only screen and (max-device-width: [TEMPLATEWIDTH-1]px), only screen and (max-width: [TEMPLATEWIDTH-1]px) {
       /* Show */
       *[class].show       {display: block !important;width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important; visibility: visible !important;}
       *[class].showtable 	{display: table !important; width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
