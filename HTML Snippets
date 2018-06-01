@@ -1,3 +1,16 @@
+//Left to Right, Right to left table//
+###Change the dir=rtl to dir=ltr on the container to change sides######
+<table border="0" cellpadding="0" cellspacing="0" width="640" align="center"  class="w100pc" bgcolor="#FFFFFF" dir="rtl">
+  <tr>
+    <th class="MobileBlock" align="center" dir="ltr">
+       CONTENT HERE
+    </th>
+    <th class="MobileBlock" align="center" dir="ltr">
+      CONTENT HERE
+    </th>
+  </tr>
+</table>
+############################
 // Stable Superscript //
 <span style="font-family: arial, helvetica, sans-serif; font-size:6pt; line-height:0; vertical-align:5px;">&reg;</span>
 
