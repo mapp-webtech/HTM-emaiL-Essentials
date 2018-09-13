@@ -1,7 +1,14 @@
 ### How to get the child value of grp property and group attributes ###
-
 <c:forEach var="child" items="${DS.grp}">
   <c:if test="${child['group.PropertyName'] == 'Reisebuero_Impressum'}">
     <c:set var="text_1">${child['group.PropertyValue']}</c:set>
   </c:if>
 </c:forEach>
+
+### How to get the Group's name ###
+<c:forEach var="child" items="${DS.grp}">${child['gname']}</c:forEach>
+
+### Getting the Group's name + Group's email + Recipient's email ###
+<c:forEach var="child" items="${DS.grp}">
+  <b>${child['gname']}</b>&nbsp;(${child['gemail']})<br />
+</c:forEach> with the email-address <c:out value="${DS.uemail}" />
