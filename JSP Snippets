@@ -1,0 +1,7 @@
+### How to get the child value of grp property and group attributes ###
+
+<c:forEach var="child" items="${DS.grp}">
+  <c:if test="${child['group.PropertyName'] == 'Reisebuero_Impressum'}">
+    <c:set var="text_1">${child['group.PropertyValue']}</c:set>
+  </c:if>
+</c:forEach>
