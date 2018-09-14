@@ -12,3 +12,6 @@
 <c:forEach var="child" items="${DS.grp}">
   <b>${child['gname']}</b>&nbsp;(${child['gemail']})<br />
 </c:forEach> with the email-address <c:out value="${DS.uemail}" />
+
+### Multiple comparison of variable's value ###
+<c:if test="${(var != 'VALUE') && (var != 'VALUE')}">
