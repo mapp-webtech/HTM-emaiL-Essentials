@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    #set ($defaultTitle = ${tplPlaceholder.element('"id": "def-title", "name":"Title", "type":"text", "value":"Newsletter", "inline":"false", "group":"System Defaults"')})
+	  #set ($defaultBGColor = ${tplPlaceholder.element('"id": "def-bgColor", "name":"Default Background Color", "type":"text", "value":"#F1F5F7", "inline":"false", "group":"System Defaults"')})
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no"/>
+    <title> ${defaultTitle} </title>
+    <style type="text/css">
+      /* Reset & Fixes for COMMON ISSUES */
+      #outlook a {padding:0;}
+      .ReadMsgBody, .ExternalClass {width:100%;}
+      .ExternalClass ecx* {line-height:100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+      img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; border:none;}
+      .ExternalClass img[class^=Emoji] {width: 10px !important; height: 10px !important; display: inline !important;}
+      body, p {margin:0; padding:0; margin-bottom:0; -webkit-text-size-adjust:100%;  -ms-text-size-adjust:100%;}
+      table, table td {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
+      a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;}
+      div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+      .tablefixed {table-layout: fixed;}
+      .desktophide { display: none; }
+	  /* END Reset & Fixes for COMMON ISSUES */
+	</style>
+	<style type="text/css">
+	  $tplMedia.view('"type":"mobile","width":"320"')
+	  @media screen and (max-width: max-width: [TEMPLATEWIDTH-1]px) {
+      /* Show */
+      .show       {display: block !important;width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important; visibility: visible !important;}
+      .showtable 	{display: table !important; width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
+      .showtd  	  {display: table-cell !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
+      .showimg 	  {display: block !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
+      /* Hide */
+      .NoMob      {display: none !important;}
+      /* Height */
+      .hauto    	{height: auto !important;}
+      .h40px     	{height: 40px !important;}
+      /* Width */
+      .wauto      {width: auto !important;}
+      .mw0px		  {min-width: 0px !important;}
+      .mwNone 	  {max-width: none !important;}
+      .w100px     {width: 100px !important;}
+      .w100pc     {width: 100% !important;}
+      /* Font */
+      .font15px	  {font-size: 15px !important;}
+      /* Text */
+      .txtBold 	  {font-weight:bold !important;}
+      /* Padding */
+      .padL40px	  {padding-left: 40px !important;}
+      .padR40px  	{padding-right: 40px !important;}
+      .padTRBL40px{padding-top: 40px !important;padding-right: 40px !important;padding-bottom: 40px !important;padding-left: 40px !important;}
+      /* Colour */
+      .Colour_LightGrey  	{color: #2e2e2e !important;}
+      .BGColour_Red     	{background-color: #ff0000 !important;}
+      .borderBGrey      	{border-bottom: 1px solid #c7c7c7 !important;}
+      }
+	  $tplMedia.end()
+    </style>
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  </head>
+  <body style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; -webkit-text-size-adjust: none;" bgcolor="${defaultBGColor}">
+    <!--[if mso 16]>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="${defaultBGColor}">
+      <tr>
+        <td align="center">
+          <![endif]-->
+          <!--[if !mso]><!-->
+          <table width="100%" style="min-width:{width}px;" border="0" cellpadding="0" cellspacing="0" class="mw0px tablefixed" bgcolor="${defaultBGColor}">
+            <tr>
+              <td width="100%" style="min-width:{width}px;" align="center" class="mw0px">
+                <!--<![endif]-->
+                $tplBlockArea.begin('"name" : "Drop-zone", "block-area-id" : "0"')
+                $tplBlockArea.end()                
+                <!--[if !mso]><!-->
+              </td>
+            </tr>
+          </table>
+          <!--<![endif]-->
+          <!--[if mso 16]>
+        </td>
+      </tr>
+    </table>
+    <![endif]-->
+  </body>
+</html>
