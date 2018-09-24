@@ -21,6 +21,8 @@
       .tablefixed {table-layout: fixed;}
       .desktophide { display: none; }
       /* END Reset & Fixes for COMMON ISSUES */
+    </style>
+	  <style type="text/css">
       @media only screen and (max-device-width: [TEMPLATEWIDTH-1]px), only screen and (max-width: [TEMPLATEWIDTH-1]px) {
       /* Show */
       .show       {display: block !important;width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important; visibility: visible !important;}
