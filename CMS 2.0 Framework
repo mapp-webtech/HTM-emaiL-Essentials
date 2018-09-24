@@ -26,7 +26,7 @@
 	</style>
 	<style type="text/css">
 	  $tplMedia.view('"type":"mobile","width":"320"')
-	  @media screen and (max-width: max-width: [TEMPLATEWIDTH-1]px) {
+	@media screen and (max-width: [TEMPLATEWIDTH-1]px) {
       /* Show */
       .show       {display: block !important;width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important; visibility: visible !important;}
       .showtable 	{display: table !important; width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
