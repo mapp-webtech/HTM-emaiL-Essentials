@@ -7,7 +7,6 @@
     <meta name="format-detection" content="telephone=no"/>
     <title> {TITLE} </title>
     <style type="text/css">
-      /* Reset & Fixes for COMMON ISSUES */
       #outlook a {padding:0;}
       .ReadMsgBody, .ExternalClass {width:100%;}
       .ExternalClass ecx* {line-height:100%;}
@@ -20,35 +19,26 @@
       div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
       .tablefixed {table-layout: fixed;}
       .desktophide { display: none; }
-      /* END Reset & Fixes for COMMON ISSUES */
     </style>
-	  <style type="text/css">
+    <style type="text/css">
       @media only screen and (max-device-width: [TEMPLATEWIDTH-1]px), only screen and (max-width: [TEMPLATEWIDTH-1]px) {
-      /* Show */
       .show       {display: block !important;width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important; visibility: visible !important;}
       .showtable 	{display: table !important; width: 100% !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       .showtd  	  {display: table-cell !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
       .showimg 	  {display: block !important; height: auto !important;max-height: none !important; line-height: 1.5 !important;}
-      /* Hide */
       .NoMob      {display: none !important;}
-      /* Height */
       .hauto    	{height: auto !important;}
       .h40px     	{height: 40px !important;}
-      /* Width */
       .wauto      {width: auto !important;}
       .mw0px		  {min-width: 0px !important;}
       .mwNone 	  {max-width: none !important;}
       .w100px     {width: 100px !important;}
       .w100pc     {width: 100% !important;}
-      /* Font */
       .font15px	  {font-size: 15px !important;}
-      /* Text */
       .txtBold 	  {font-weight:bold !important;}
-      /* Padding */
       .padL40px	  {padding-left: 40px !important;}
       .padR40px  	{padding-right: 40px !important;}
       .padTRBL40px{padding-top: 40px !important;padding-right: 40px !important;padding-bottom: 40px !important;padding-left: 40px !important;}
-      /* Colour */
       .Colour_LightGrey  	{color: #2e2e2e !important;}
       .BGColour_Red     	{background-color: #ff0000 !important;}
       .borderBGrey      	{border-bottom: 1px solid #c7c7c7 !important;}
