@@ -1,3 +1,6 @@
+//Target Yahoo Mobile//
+@media screen yahoo and (max-width:520px)
+##################################
 // Rounded CTA button for Outlook //
 <table width="100%" style="padding:0;margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;min-width: 100%;" cellpadding="0" cellspacing="0" border="0">
 <tr>
