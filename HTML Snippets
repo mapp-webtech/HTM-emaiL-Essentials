@@ -1,3 +1,16 @@
+//Fix underlined hyperlinks in Windows 10 mail//
+<!--[if (mso)|(mso 16)]>
+<style type="text/css">
+	body, table, td, a, span { font-family: Arial, Helvetica, sans-serif !important; }
+	a {text-decoration: none;}
+</style>
+<![endif]-->
+
+: You can bundle it with your other Outlook fixes.
+: The a {text-decoration: none;} is the fix with conditional Windows 10 (mso 16)
+
+##################################
+
 //Target Yahoo Mobile//
 @media screen yahoo and (max-width:520px)
 ##################################
