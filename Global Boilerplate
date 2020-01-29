@@ -19,6 +19,7 @@
       div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
       .tablefixed {table-layout: fixed;}
       .desktophide { display: none; }
+      sup{line-height: 0px;}
     </style>
     <style type="text/css">
       @media only screen and (max-device-width: [TEMPLATEWIDTH-1]px), only screen and (max-width: [TEMPLATEWIDTH-1]px) {
